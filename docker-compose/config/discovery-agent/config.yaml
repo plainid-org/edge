@@ -1,0 +1,15 @@
+---
+log:
+  level: ${LOG_LEVEL:-info}
+plainIdUrl: ${PLAINID_API_URL}
+plainIdDiscoveryUrl: ${PLAINID_DISCOVERY_URL}
+discoverySources:
+  - popId: ${POP_ID:-MCP}
+    environmentId: ${ENVIRONMENT_ID}
+    type: PlainIdMcpGateway
+    vendor:
+      plainIdMcpGateway:
+        url: http://mcp-gateway:5235
+    plainIdCredentials:
+      clientId: ${PLAINID_CLIENT_ID}
+      clientSecret: ${PLAINID_CLIENT_SECRET}
