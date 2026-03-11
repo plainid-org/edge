@@ -1,7 +1,7 @@
 ---
 services:
   vector-db-classifier-engine:
-    image: docker.io/plainid/vector-db-classifier-engine:1.0.1
+    image: plainidio.azurecr.io/vector-db-classifier-engine:1.0.1
     container_name: plainid-vector-db-classifier-engine
     restart: unless-stopped
     ports:
@@ -14,7 +14,7 @@ services:
       - plainid-edge
 
   mcp-gateway:
-    image: docker.io/plainid/mcp-gateway:1.0.4
+    image: plainidio.azurecr.io/mcp-gateway:1.0.5
     container_name: plainid-mcp-gateway
     restart: unless-stopped
     ports:
@@ -27,7 +27,7 @@ services:
       - plainid-edge
 
   enrichment-agent:
-    image: docker.io/plainid/enrichment-agent:1.0.4
+    image: plainidio.azurecr.io/enrichment-agent:1.0.7
     container_name: plainid-enrichment-agent
     restart: unless-stopped
     depends_on:
@@ -42,7 +42,7 @@ services:
       - plainid-edge
 
   discovery-agent:
-    image: docker.io/plainid/discovery-agent:1.0.1
+    image: plainidio.azurecr.io/discovery-agent:1.0.1
     container_name: plainid-discovery-agent
     restart: unless-stopped
     ports:
