@@ -42,7 +42,7 @@ services:
       - plainid-edge
 
   discovery-agent:
-    image: plainidio.azurecr.io/discovery-agent:1.0.2
+    image: plainidio.azurecr.io/discovery-agent:1.0.1
     container_name: plainid-discovery-agent
     restart: unless-stopped
     ports:
