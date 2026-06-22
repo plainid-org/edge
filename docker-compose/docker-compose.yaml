@@ -14,7 +14,7 @@ services:
       - plainid-edge
 
   mcp-gateway:
-    image: plainidio.azurecr.io/mcp-gateway:1.0.5
+    image: plainidio.azurecr.io/mcp-gateway:1.0.6
     container_name: plainid-mcp-gateway
     restart: unless-stopped
     ports:
